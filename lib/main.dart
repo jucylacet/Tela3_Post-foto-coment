@@ -97,7 +97,7 @@ body() {
       ],
     ),
     Container(
-      margin: EdgeInsets.only(left: 250),
+      margin: EdgeInsets.only(left: 25),
       child: Row(
         children: [
           Text(
@@ -109,49 +109,40 @@ body() {
       ),
     ),
     Row(
-      children: [
-        Expanded(
-            child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset("images/policial.png"))),
-      ],
+      children: [Image.asset("images/policial.png")],
     ),
     Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Container(
-        padding: EdgeInsets.all(20.0),
-        child: Text(
-          "A lazy rain am I The skies refuse to cry Cremation takes its piece of your supply The night is dressed like noon A sailor spoke too soon And China's on the dark side of the Moon Hear me now Platypus are a few The secret life of roo A personality I never knew (Get it on) My crater weighs a ton The archer's on the run And no one stands alone behind the Sun It's been a long time since I made a new friend Waiting on another black summer to end It's been a long time and you never know when Waiting on another black summer to end Back the flaming whip Are sailing on our censorship Riding on a headless horse to make the trip.",
-          style: TextStyle(fontSize: 22),
-          textAlign: TextAlign.justify,
+      child: Column(children: [
+        Container(
+          padding: EdgeInsets.all(10.0),
+          child: Text(
+            "A lazy rain am I The skies refuse to cry Cremation takes its piece of your supply The night is dressed like noon A sailor spoke too soon And China's on the dark side of the Moon Hear me now Platypus are a few The secret life of roo A personality I never knew (Get it on) My crater weighs a ton The archer's on the run And no one stands alone behind the Sun It's been a long time since I made a new friend Waiting on another black summer to end It's been a long time and you never know when Waiting on another black summer to end Back the flaming whip Are sailing on our censorship Riding on a headless horse to make the trip.",
+            style: TextStyle(fontSize: 18),
+            textAlign: TextAlign.justify,
+          ),
         ),
-      ),
-    ),
-    Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-      Container(
-        child: Row(
-          children: [
-            IconButton(
-              icon: Icon(Icons.thumb_up_alt_outlined),
-              onPressed: () {},
+        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+          Container(
+            child: Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.thumb_up_alt_outlined),
+                  onPressed: () {},
+                ),
+                Text(
+                  "16",
+                  style: TextStyle(fontSize: 15),
+                )
+              ],
             ),
-            Text(
-              "16",
-              style: TextStyle(fontSize: 15),
-            )
-          ],
-        ),
-      ),
-      IconButton(icon: Icon(Icons.comment_outlined), onPressed: () {}),
-      IconButton(icon: Icon(Icons.bookmark_border), onPressed: () {}),
-      IconButton(icon: Icon(Icons.share), onPressed: () {})
-    ]),
+          ),
+          IconButton(icon: Icon(Icons.comment_outlined), onPressed: () {}),
+          IconButton(icon: Icon(Icons.bookmark_border), onPressed: () {}),
+          IconButton(icon: Icon(Icons.share), onPressed: () {})
+        ]),
+      ]),
+    ),
     Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
       child: Row(
         children: [
           IconButton(icon: Icon(Icons.account_circle), onPressed: () {}),
@@ -171,9 +162,6 @@ body() {
       ),
     ),
     Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
       child: Row(
         children: [
           IconButton(icon: Icon(Icons.account_circle), onPressed: () {}),
